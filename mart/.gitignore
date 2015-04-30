@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 *.pyc
 *.pyo
 *.db
 .DS_Store
 .coverage
 local_settings.py
-/static
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -64,4 +61,3 @@ docs/_build/
 
 # PyBuilder
 target/
->>>>>>> 1b7b4517159ee82f159f779b368202f0d237659b
