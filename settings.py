@@ -146,7 +146,7 @@ from __future__ import absolute_import, unicode_literals
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
-
+SECRET_KEY = '3%_u63qmfgme2k1g4yj$huv8!asn$i7obk9kqaj860mkch#(%&'
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -340,6 +340,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.core.context_processors.tz",
     "mezzanine.conf.context_processors.settings",
+    "mezzanine.pages.context_processors.page",
 )
 
 # List of middleware classes to use. Order is important; in the request phase,
