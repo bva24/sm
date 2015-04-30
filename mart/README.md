@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-# sm
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 # sacredmart
 Ecommerce Version 1
@@ -16,4 +13,3 @@ New
 =======
 # sm
 >>>>>>> 1b7b4517159ee82f159f779b368202f0d237659b
->>>>>>> 721449d127970bc7c9c3c7726ec9c2b1c68d3353

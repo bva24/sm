@@ -146,7 +146,8 @@ from __future__ import absolute_import, unicode_literals
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
-SECRET_KEY = '3%_u63qmfgme2k1g4yj$huv8!asn$i7obk9kqaj860mkch#(%&'
+
+
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
@@ -161,7 +162,7 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['52.10.5.91']
+ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -170,7 +171,7 @@ ALLOWED_HOSTS = ['52.10.5.91']
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Asia/Kolkata'
+TIME_ZONE = None
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -226,26 +227,26 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 
 
 #############
-#############
 # DATABASES #
 #############
 
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": 'django.db.backends.mysql',
+        "ENGINE": "django.db.backends.",
         # DB name or path to database file if using sqlite3.
-        "NAME": 'mart_db',
+        "NAME": "",
         # Not used with sqlite3.
-        "USER": 'root',
+        "USER": "",
         # Not used with sqlite3.
-        "PASSWORD": 'admin',
+        "PASSWORD": "",
         # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": '127.0.0.1',
+        "HOST": "",
         # Set to empty string for default. Not used with sqlite3.
         "PORT": "",
     }
 }
+
 
 #########
 # PATHS #
@@ -290,11 +291,7 @@ ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
 # or "C:/www/django/templates".
 # Always use forward slashes, even on Windows.
 # Don't forget to use absolute paths, not relative paths.
-#TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
-TEMPLATE_DIRS = (
-    os.path.join(PROJECT_ROOT, "moderna/templates"),
-    os.path.join(PROJECT_ROOT, "templates"),
-)
+TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 
 ################
@@ -302,7 +299,6 @@ TEMPLATE_DIRS = (
 ################
 
 INSTALLED_APPS = (
-    "moderna",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -323,7 +319,6 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
-    "mart",
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -339,7 +334,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.core.context_processors.tz",
     "mezzanine.conf.context_processors.settings",
-    "mezzanine.pages.context_processors.page", #Added by me as shown in CMD while starting local server
 )
 
 # List of middleware classes to use. Order is important; in the request phase,

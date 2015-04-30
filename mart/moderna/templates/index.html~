@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load i18n  mezzanine_tags staticfiles%}
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+{% block breadcrumb_wrapper %}
+{% endblock %}
+
+{% block title_wrapper %}
+{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+
+{% block all_content %}
+<section id="{% block section_id %}featured{% endblock %}">
+{% block left_wrapper %}
+{% endblock %}
+
+
+{% block main_wrapper %}
+<div class="col-md-{% block main_col_size %}none{% endblock %} {% block main_class %}{% endblock %}">
+{% block main %}
+
+
+<!-- start slider -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="{% static "img/slides/banner2.jpg" %}" alt="" />
+                <div class="flex-caption">
+                    <h3>Vedic Books and Literature</h3> 
+					<p>Buy Vedic Books Online</p> 
+					<a href="#" class="btn btn-theme">Click on Book Shop</a>
+                </div>
+              </li>
+              <li>
+                <img src="{% static "img/slides/banner4.jpg" %}" alt="" />
+                <div class="flex-caption">
+                    <h3>Vedanidhi Book Shop</h3> 
+					<p>High Quality Books referred by students</p> 
+					<a href="#" class="btn btn-theme">Click on Book Shop</a>
+                </div>
+              </li>
+              <li>
+                <img src="{% static "img/slides/banner3.jpg" %}" alt="" />
+                <div class="flex-caption">
+                    <h3>Fast delivery - Hassle Free Payment</h3> 
+					<p>These are exclusive publications from Vedanidhi Team</p> 
+					<a href="#" class="btn btn-theme">Click on Book Shop</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+	<!-- end slider -->
+			</div>
+		</div>
+	</div>	
+
+{% endblock %}
+</div>
+{% endblock %}
+{% block right_wrapper %}
+{% endblock %}
+</section>
+<section class="callaction">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="big-cta">
+					<div class="cta-text">
+						<h2><span>Vedanidhi Online Book Shop</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>About Us</h4>
+								<div class="icon">
+								<i class="fa fa-desktop fa-3x"></i>
+								</div>
+								<p class="">
+								 Read about our vision and mission here. We are dedicated to serve the vedic community and preserve our great tradition
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Our Publications</h4>
+								<div class="icon">
+								<i class="fa fa-pagelines fa-3x"></i>
+								</div>
+								<p>
+								 Read all about our publications here. We have a team of vedic scholars and teachers who have vast expertise in the teaching field
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>BookShop</h4>
+								<div class="icon">
+								<i class="fa fa-edit fa-3x"></i>
+								</div>
+								<p>
+						    To address the needs of students who are interested to buy our publications we decided to open an online book shop.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Contact/Queries</h4>
+								<div class="icon">
+								<i class="fa fa-code fa-3x"></i>
+								</div>
+								<p>
+								You are welcome to post your queries and or talk to us to clarify any doubts and also donate to this noble cause.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Latest Additions</h4>
+				<div class="row">
+					<section id="projects">
+					<ul class="portfolio" id="thumbs">
+						<!-- Item Project and Filter Name -->
+						<li data-type="web" data-id="id-0" class="col-lg-3 design">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/r_1.jpg" %}" title="Rigveda Pada Pata (Poorvardham)" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Buy this now at discounted rate. Offer valid till stock lasts" src="{% static "img/works/r_1.jpg" %}">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li data-type="icon" data-id="id-1" class="item-thumbs col-lg-3 design">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/r_2.jpg" %}" title="Rigveda Pada Pata (Uttarardham)" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Buy this now at discounted rate. Offer valid till stock lasts" src="{% static "img/works/r_2.jpg" %}">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/r_3.jpg" %}" title="Yajurveda Taittireeya Samhita" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Buy this now at discounted rate. Offer valid till stock lasts" src="{% static "img/works/r_3.jpg" %}">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a href="{% static "img/works/r_4.jpg" %}" title="Smartha Darshana (Telugu)" data-fancybox-group="gallery" class="hover-wrap fancybox">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img alt="Buy this now at discounted rate. Offer valid till stock lasts" src="{% static "img/works/r_4.jpg" %}">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+
+{% endblock %}
